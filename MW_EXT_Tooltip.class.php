@@ -3,7 +3,7 @@
 namespace MediaWiki\Extension\MW_EXT_Tooltip;
 
 use OutputPage, Parser, Skin;
-use MediaWiki\Extension\MW_EXT_Core\MW_EXT_Core;
+use MediaWiki\Extension\MW_EXT_Kernel\MW_EXT_Kernel;
 
 /**
  * Class MW_EXT_Tooltip
@@ -35,11 +35,11 @@ class MW_EXT_Tooltip {
 	 */
 	public static function onRenderTag( Parser $parser, $word = '', $tooltip = '' ) {
 		// Argument: id.
-		$getWord = MW_EXT_Core::outClear( $word ?? '' ?: '' );
+		$getWord = MW_EXT_Kernel::outClear( $word ?? '' ?: '' );
 		$outWord = $getWord;
 
 		// Argument: tooltip.
-		$getTooltip = MW_EXT_Core::outClear( $tooltip ?? '' ?: '' );
+		$getTooltip = MW_EXT_Kernel::outClear( $tooltip ?? '' ?: '' );
 		$outTooltip = $getTooltip;
 
 		// Out HTML.
