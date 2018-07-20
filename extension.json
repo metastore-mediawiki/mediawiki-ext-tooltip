@@ -17,14 +17,14 @@
 		}
 	},
 	"AutoloadClasses": {
-		"MediaWiki\\Extension\\MW_EXT_Tooltip\\MW_EXT_Tooltip": "MW_EXT_Tooltip.class.php"
+		"MediaWiki\\Extension\\METADATA\\MW_EXT_Tooltip": "MW_EXT_Tooltip.class.php"
 	},
 	"Hooks": {
 		"ParserFirstCallInit": [
-			"MediaWiki\\Extension\\MW_EXT_Tooltip\\MW_EXT_Tooltip::onParserFirstCallInit"
+			"MediaWiki\\Extension\\METADATA\\MW_EXT_Tooltip::onParserFirstCallInit"
 		],
 		"BeforePageDisplay": [
-			"MediaWiki\\Extension\\MW_EXT_Tooltip\\MW_EXT_Tooltip::onBeforePageDisplay"
+			"MediaWiki\\Extension\\METADATA\\MW_EXT_Tooltip::onBeforePageDisplay"
 		]
 	},
 	"ExtensionMessagesFiles": {
